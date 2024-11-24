@@ -25,6 +25,7 @@ public class ProductController {
         return productService.createProduct(productRequestDto, userId);
     }
 
+    // @PageableDefault(size = 10, sort = "createdAt", direction = Sort.Direction.DESC) Pageable pageable
     @GetMapping
     public Page<ProductResponseDto> getProducts(ProductSearchDto searchDto, Pageable pageable) {
         return productService.getProducts(searchDto, pageable);
