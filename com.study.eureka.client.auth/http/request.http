@@ -1,0 +1,19 @@
+### 회원가입
+POST localhost:19091/auth/signUp
+Content-Type: application/json
+
+{
+  "userId" : "user_1",
+  "username" : "tom_1",
+  "password" : "123",
+  "role" : "MEMBER"
+}
+
+### 로그인
+POST localhost:19091/auth/signIn
+Content-Type: application/json
+
+{
+  "userId" : "user_1",
+  "password": "123"
+}
